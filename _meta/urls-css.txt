@@ -1,0 +1,15 @@
+https://loteamentoreservaimperial.com.br/wp-content/plugins/contact-form-7/includes/css/styles.css
+https://loteamentoreservaimperial.com.br/wp-content/plugins/elementor/assets/css/frontend-lite.min.css
+https://loteamentoreservaimperial.com.br/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css
+https://loteamentoreservaimperial.com.br/wp-content/plugins/revslider/public/assets/css/rs6.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/assets/animations/animations.min.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/assets/jplayer/css/jplayer.blue.monday.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/assets/ui/jquery.ui.all.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/css/base.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/css/layout.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/css/responsive.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/css/shortcodes.css
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/style.css
+https://loteamentoreservaimperial.com.br/wp-content/uploads/elementor/css/global.css
+https://loteamentoreservaimperial.com.br/wp-content/uploads/elementor/css/post-83.css
+https://loteamentoreservaimperial.com.br/wp-includes/css/dist/block-library/style.min.css

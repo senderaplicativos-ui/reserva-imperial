@@ -1,0 +1,17 @@
+https://loteamentoreservaimperial.com.br/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app.js
+https://loteamentoreservaimperial.com.br/wp-content/plugins/contact-form-7/includes/js/scripts.js
+https://loteamentoreservaimperial.com.br/wp-content/plugins/revslider/public/assets/js/rbtools.min.js
+https://loteamentoreservaimperial.com.br/wp-content/plugins/revslider/public/assets/js/rs6.min.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/assets/animations/animations.min.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/assets/jplayer/jplayer.min.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/js/menu.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/js/parallax/translate3d.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/js/plugins.js
+https://loteamentoreservaimperial.com.br/wp-content/themes/betheme/js/scripts.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/jquery-migrate.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/jquery.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/ui/accordion.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/ui/core.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/ui/mouse.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/ui/sortable.min.js
+https://loteamentoreservaimperial.com.br/wp-includes/js/jquery/ui/tabs.min.js
