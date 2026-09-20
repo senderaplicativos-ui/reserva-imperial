@@ -87,7 +87,7 @@ textarea:focus-visible {
   justify-content: center;
   gap: 10px;
   padding: 15px 30px;
-  border: 0;
+  border: 2px solid transparent; /* mantém todos os botões com a mesma altura */
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 700;
@@ -105,7 +105,7 @@ textarea:focus-visible {
 .btn-laranja { background: var(--laranja); color: #fff; }
 .btn-laranja:hover { background: var(--laranja-escuro); color: #fff; }
 
-.btn-vazio { background: transparent; color: #fff; border: 2px solid rgba(255, 255, 255, .8); }
+.btn-vazio { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .8); }
 .btn-vazio:hover { background: #fff; color: var(--laranja); }
 
 .btn-bloco { width: 100%; }
@@ -190,6 +190,7 @@ textarea:focus-visible {
   object-position: center;
   display: block;
 }
+.hero-img-mobile { display: none; }
 .hero-bg::after {
   content: "";
   position: absolute;
@@ -246,7 +247,8 @@ textarea:focus-visible {
 }
 .hero-precos strong { color: var(--lima); }
 
-.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-btns { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.hero-btns--corretor { margin-top: 28px; }
 
 .hero-selo {
   position: absolute;
@@ -634,7 +636,7 @@ textarea:focus-visible {
 }
 .novidades h2 { color: #fff; font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
 .novidades p { max-width: 46em; margin: 0 auto 30px; font-size: 1.06rem; color: rgba(255, 255, 255, .94); }
-.novidades-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.novidades-btns { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; justify-content: center; }
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 860px; margin: 0 auto; }
@@ -1015,6 +1017,9 @@ textarea:focus-visible {
 
 @media (max-width: 640px) {
   .hero { min-height: auto; padding: 50px 0 60px; }
+  /* no mobile o hero usa a banner do casal */
+  .hero-img-desktop { display: none; }
+  .hero-img-mobile { display: block; object-position: center 22%; }
   .corretor-grid { grid-template-columns: 1fr; }
   .corretor-foto { max-width: 268px; margin: 0 auto; }
   .campo-duplo { grid-template-columns: 1fr; }
@@ -1024,6 +1029,9 @@ textarea:focus-visible {
   .whats-flutuante .txt { display: none; }
   .whats-flutuante { border-radius: 50%; width: 58px; height: 58px; padding: 0; justify-content: center; }
   .infra-faixa { flex-direction: column; }
+  /* botões empilhados e da mesma largura para não ficarem desalinhados */
+  .hero-btns { flex-direction: column; align-items: stretch; }
+  .hero-btns .btn { width: 100%; }
   .hero-selo { width: 76px; right: 14px; bottom: 14px; }
   .secao-titulo { margin-bottom: 38px; }
 }
