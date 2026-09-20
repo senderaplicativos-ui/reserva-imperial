@@ -180,21 +180,26 @@ textarea:focus-visible {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("../assets/img/banner.jpg") center/cover no-repeat;
+  z-index: 0;
+  background: var(--escuro, #1a1a1a);
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(0, 0, 0, .82) 0%, rgba(0, 0, 0, .62) 45%, rgba(0, 0, 0, .3) 100%);
+  background:
+    linear-gradient(100deg, rgba(0, 0, 0, .86) 0%, rgba(0, 0, 0, .68) 46%, rgba(0, 0, 0, .34) 100%),
+    linear-gradient(to top, rgba(0, 0, 0, .55) 0%, rgba(0, 0, 0, 0) 45%);
 }
 .hero .container { position: relative; z-index: 2; }
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap: 50px;
-  align-items: center;
-}
+.hero-conteudo { max-width: 46rem; }
 .hero-tag {
   display: inline-flex;
   align-items: center;
@@ -242,18 +247,6 @@ textarea:focus-visible {
 .hero-precos strong { color: var(--lima); }
 
 .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; }
-
-.hero-video {
-  position: relative;
-  border-radius: var(--raio);
-  overflow: hidden;
-  box-shadow: var(--sombra-forte);
-  aspect-ratio: 9 / 16;
-  max-height: 560px;
-  margin-left: auto;
-  width: 100%;
-  max-width: 320px;
-}
 
 .hero-selo {
   position: absolute;
@@ -518,6 +511,9 @@ textarea:focus-visible {
 .video-card .info { padding: 20px 22px 24px; }
 .video-card h3 { font-size: 1.12rem; margin-bottom: 6px; }
 .video-card p { margin: 0; font-size: .93rem; color: var(--texto-suave); }
+
+/* vídeo vertical (formato celular): só assume 9/16 na versão mobile */
+.moldura-vertical { aspect-ratio: 16 / 9; }
 
 /* ---------- localização ---------- */
 .local-grid {
@@ -978,8 +974,6 @@ textarea:focus-visible {
    RESPONSIVO
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero-video { margin: 0 auto; max-width: 290px; }
   .corretor-grid { grid-template-columns: 250px 1fr; gap: 36px; }
   .negocie-grid,
   .local-grid,
@@ -1011,6 +1005,12 @@ textarea:focus-visible {
   .galeria figure:first-child { grid-column: span 1; aspect-ratio: 4 / 3; }
   .mapa-desktop { display: none; }
   .mapa-mobile { display: block; }
+  /* no mobile o Shorts aparece no formato original de celular */
+  .video-card-shorts .moldura-vertical {
+    aspect-ratio: 9 / 16;
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 640px) {
