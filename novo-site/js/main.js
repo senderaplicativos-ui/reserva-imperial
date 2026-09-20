@@ -427,6 +427,13 @@
     Array.prototype.forEach.call(alvos, function (el) { obs.observe(el); });
   }
 
+  /* ---------- ano do rodape ---------- */
+
+  function initAno() {
+    var el = document.getElementById('ano');
+    if (el) el.textContent = String(new Date().getFullYear());
+  }
+
   /* ------------------------------------------------------------ */
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -437,5 +444,6 @@
     initGaleria();
     initVideos();
     initRevelar();
+    initAno();
   });
 })();
